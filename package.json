@@ -1,0 +1,46 @@
+{
+  "name": "covid19-cli",
+  "version": "1.0.0",
+  "description": "A cli-based COVID-19 tracking tool",
+  "main": "bin/index.js",
+  "bin": {
+    "covid19": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --nolazy --inspect-brk=9229 bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhackyu/covid19-cli.git"
+  },
+  "keywords": [
+    "ncov",
+    "covid-19",
+    "coronavirus",
+    "virus",
+    "cli",
+    "tracker",
+    "data",
+    "corona",
+    "covid19",
+    "novel",
+    "coronavirus",
+    "stats",
+    "status"
+  ],
+  "author": "mhackyu <mark.christian.paderes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhackyu/covid19-cli/issues"
+  },
+  "homepage": "https://github.com/mhackyu/covid19-cli#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^3.0.0",
+    "date-fns": "^2.11.0",
+    "figlet": "^1.3.0",
+    "papaparse": "^5.1.1",
+    "yargs": "^15.3.0"
+  }
+}
