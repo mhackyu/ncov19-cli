@@ -1,7 +1,7 @@
 {
   "name": "ncov19-cli",
-  "version": "1.0.0",
-  "description": "A cli-based COVID-19 tracking tool",
+  "version": "1.0.1",
+  "description": "A CLI-based COVID-19 tracking tool",
   "main": "bin/index.js",
   "bin": {
     "ncov19": "bin/index.js"
