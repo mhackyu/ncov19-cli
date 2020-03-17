@@ -20,7 +20,7 @@ $ npm install -g ncov19-cli
 
 # Usage
 
-*Get summary of ncov19-cli cases*
+**Get summary of ncov19-cli cases**
 
 ```
 $ ncov19
@@ -28,7 +28,7 @@ $ ncov19
 
 <img src="https://imgur.com/9pi8jE2.png">
 
-*Get by location*
+**Get by location**
 
 ```
 $ ncov19 --location=Philippines
