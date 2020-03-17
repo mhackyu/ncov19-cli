@@ -3,14 +3,14 @@
 const figlet = require('figlet');
 const chalk = require('chalk');
 const { getSummary } = require('../helpers/covid');
-const welcome = figlet.textSync('covid19', { horizontalLayout: 'full', font: 'Banner3-D' });
+const welcome = figlet.textSync('ncov19', { horizontalLayout: 'full', font: 'Banner3-D' });
 
-console.log(chalk.yellowBright(welcome) + '\n');
+console.log(chalk.yellowBright(welcome));
+console.log(chalk.bgGrey.yellowBright(' Made with <3 by mhackyu <mark.christian.paderes@gmail.com> \n'));
 
 require('yargs')
   .scriptName('covid19')
   .usage('Usage: $0 <command> [options]')
-  .epilog(chalk.yellowBright(' Made with <3 by mhackyu <mark.christian.paderes@gmail.com> \n'))
   .command(
     '$0',
     'get summary of covid-19 cases',

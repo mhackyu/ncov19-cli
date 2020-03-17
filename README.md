@@ -1,5 +1,5 @@
 <h1 align="center">
-  covid19-cli
+  ncov19-cli
 </h1>
 
 <p align="center">
@@ -12,28 +12,28 @@
 <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">
 </p>
 
-<p align="center">covid19-cli is a 2019 Novel Coronavirus COVID-19 (2019-nCoV) terminal based tracker</p>
+<p align="center">ncov19-cli is a 2019 Novel Coronavirus COVID-19 (2019-nCoV) CLI based tracker</p>
 
 
 # Installation
 
 ```
-$ npm install -g covid19-cli
+$ npm install -g ncov19-cli
 ```
 
 # Usage
 
-Get summary of covid19 cases
+Get summary of ncov19-cli cases
 ```
-$ covid19
+$ ncov19
 ```
 Get by location
 ```
-$ covid19 --location=Philippines
+$ ncov19 --location=Philippines
 ```
 or 
 ```
-$ covid19 -l Philippines
+$ ncov19 -l Philippines
 ```
 
 # Data Sources
@@ -55,7 +55,7 @@ $ covid19 -l Philippines
 * Italy Ministry of Health: http://www.salute.gov.it/nuovocoronavirus
 
 # Special Thanks
-Data is updated daily by the [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)](https://github.com/CSSEGISandData/COVID-19). Special thanks to them.
+Data is updated daily (23:59 UTC). by the [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)](https://github.com/CSSEGISandData/COVID-19). Files after Feb 1 (UTC): once a day around 23:59 (UTC).
 
 
 
