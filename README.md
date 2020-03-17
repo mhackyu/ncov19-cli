@@ -26,11 +26,15 @@ Get summary of ncov19-cli cases
 $ ncov19
 ```
 
+<img src="https://imgur.com/9pi8jE2.png">
+
 Get by location
 
 ```
 $ ncov19 --location=Philippines
 ```
+
+<img src="https://imgur.com/POoSUJx.png">
 
 or
 
