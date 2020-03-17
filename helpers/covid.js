@@ -1,4 +1,5 @@
 const axios = require('axios');
+const chalk = require('chalk');
 const papa = require('papaparse');
 const { subDays } = require('date-fns');
 const { groupBy, formatDate } = require('../utils');
@@ -58,11 +59,28 @@ const getUpdatedReport = () => {
       const summary = getSummarizedReport(dataByLocation);
       resolve(summary);
     } catch (error) {
-      reject(error);
+      reject(new Error(error));
     }
   });
 };
 
+const getSummary = async (location = '') => {
+  try {
+    const result = await getUpdatedReport();
+    if (location !== '') {
+      const loc = result.find((data) => data.location.toUpperCase() === location.toUpperCase());
+      if (loc) {
+        return console.table(loc);
+      }
+      return console.log(chalk.redBright('Location not found'));
+    }
+
+    return console.table(result);
+  } catch (error) {
+    console.log(chalk.redBright('Something went wrong ', error));
+  }
+};
+
 module.exports = {
-  getUpdatedReport
+  getSummary
 };
