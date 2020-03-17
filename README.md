@@ -4,9 +4,11 @@
 
 <img src="https://img.shields.io/badge/node-v12.14.0-red.svg"> <img src="https://img.shields.io/badge/license-MIT-green.svg">
 
+<div>
 <img src="https://forthebadge.com/images/badges/built-with-love.svg">
 <img src="https://forthebadge.com/images/badges/built-with-swag.svg">
 <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">
+</div>
 
 <p>ncov19-cli is a 2019 Novel Coronavirus COVID-19 (2019-nCoV) CLI based tracker</p>
 
