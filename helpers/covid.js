@@ -55,7 +55,7 @@ const getUpdatedReport = () => {
     try {
       const csv = await getCSVData(today);
       const { data } = papa.parse(csv.data, { header: true });
-      const dataByLocation = groupBy(data, 'Country/Region');
+      const dataByLocation = groupBy(data, 'Country_Region');
       const summary = getSummarizedReport(dataByLocation);
       resolve(summary);
     } catch (error) {
