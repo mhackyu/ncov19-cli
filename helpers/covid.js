@@ -16,10 +16,11 @@ const getCSVData = async (date, data = []) => {
     const csv = await axios.get(`${BASE_URL}/${date}.csv`);
     return csv;
   } catch (error) {
-    if (error.response.data === '404: Not Found\n') {
+    if (error.response.status === 404) {
       console.log(`No data found from this date: ${date}`);
       return getCSVData(formatDate(subDays(new Date(date), 1)));
     }
+    console.log(error);
     console.log('Something went wrong while fetching data');
   }
 };
