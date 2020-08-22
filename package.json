@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/mhackyu/ncov19-cli#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "chalk": "^4.0.0",
     "date-fns": "^2.11.0",
     "figlet": "^1.3.0",
